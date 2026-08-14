@@ -14,4 +14,6 @@
 Figma Makeを使用して、上記デザインをReactコードとして出力しました。
 本リポジトリは、このFigma Makeによって生成したReactコードをベースとしています。
 
-コンポーネントの整理およびReact Routerによるページ分割はブランチで行います。
+コンポーネントの整理およびReact Routerによるページ分割については別ブランチで進めます。
+- `main`：Figma Makeによる初期出力
+- `react-router`：コンポーネント整理およびReact Routerによるページ分割
