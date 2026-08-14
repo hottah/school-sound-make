@@ -1,11 +1,17 @@
+# FigmaデザインのReact実装
 
-  # FigmaデザインのReact実装
+デザインデータには、Figma Communityで公開されている以下のテンプレートを利用しました。
 
-  This is a code bundle for FigmaデザインのReact実装. The original project is available at https://www.figma.com/design/yu8CJYeYomZKIshrSDzcvh/Figma%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AEReact%E5%AE%9F%E8%A3%85.
+[School Sound - simple website template for beginners for school](https://www.figma.com/community/file/1012561224815784091/school-sound-simple-website-template-for-beginners-for-school?q_id=7d1da0e5-b03b-4059-9004-efdfdf35891e)
 
-  ## Running the code
+## デザイン採用の条件
 
-  Run `npm i` to install the dependencies.
+- 1ページの縦長レイアウトでありながら、後から各セクションをページ単位に分割できる構成であること
+- Figma上で各要素のレイヤーを取得・確認できること
 
-  Run `npm run dev` to start the development server.
-  
+## React実装
+
+Figma Makeを使用して、上記デザインをReactコードとして出力しました。
+本リポジトリは、このFigma Makeによって生成したReactコードをベースとしています。
+
+コンポーネントの整理およびReact Routerによるページ分割はブランチで行います。
