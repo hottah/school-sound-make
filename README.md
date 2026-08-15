@@ -1,11 +1,69 @@
+# School Sound
 
-  # FigmaデザインのReact実装
+Figma Make で生成したデザインをベースに、React / TypeScript / Vite で構成を整理・実装したWebサイトです。
 
-  This is a code bundle for FigmaデザインのReact実装. The original project is available at https://www.figma.com/design/yu8CJYeYomZKIshrSDzcvh/Figma%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AEReact%E5%AE%9F%E8%A3%85.
+Figma由来のレイアウトを維持しつつ、React Routerによるページ分割、コンポーネント整理、モーダル表示などを追加しています。
 
-  ## Running the code
+## Features
 
-  Run `npm i` to install the dependencies.
+- React + TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- ページ単位のルーティング
+- 共通Navigation / Footer
+- Sectionコンポーネント化
+- Lightbox / Modal表示
+- ページごとのスタイル切り替え
+- Google Fonts / Montserrat
 
-  Run `npm run dev` to start the development server.
-  
+## Pages
+
+- Home
+- Product
+- Courses
+- Contact
+
+## Sections
+
+`section` ディレクトリには、ページ内で利用する比較的大きなUI単位を配置しています。
+
+例：
+
+- Hero
+- Packages
+- Video
+- Team
+- Testimonials
+
+Sectionは通常のページ内表示だけでなく、必要に応じてLightbox内でも利用しています。
+
+## Project Structure
+
+```text
+src/
+├─ assets/
+├─ components/
+│  ├─ Navigation.tsx
+│  ├─ Footer.tsx
+│  ├─ SiteLayout.tsx
+│  └─ Lightbox.tsx
+│
+├─ section/
+│  ├─ Hero.tsx
+│  ├─ Packages.tsx
+│  ├─ Video.tsx
+│  ├─ Team.tsx
+│  └─ Testimonials.tsx
+│
+├─ pages/
+│  ├─ HomePage.tsx
+│  ├─ ProductPage.tsx
+│  ├─ CoursesPage.tsx
+│  └─ ...
+│
+├─ styles/
+│  └─ index.css
+│
+├─ App.tsx
+└─ main.tsx
