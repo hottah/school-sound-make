@@ -19,7 +19,9 @@ function figmaAssetResolver() {
   };
 }
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === "build" ? "/school-sound-make/" : "/",
+
   plugins: [figmaAssetResolver(), react(), tailwindcss()],
 
   resolve: {
@@ -29,4 +31,4 @@ export default defineConfig({
   },
 
   assetsInclude: ["**/*.svg", "**/*.csv"],
-});
+}));
