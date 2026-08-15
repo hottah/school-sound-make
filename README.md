@@ -1,7 +1,4 @@
-# School Sound
-
 Figma Make で生成したデザインをベースに、React / TypeScript / Vite で構成を整理・実装したWebサイトです。
-
 Figma由来のレイアウトを維持しつつ、React Routerによるページ分割、コンポーネント整理、モーダル表示などを追加しています。
 
 ## Features
